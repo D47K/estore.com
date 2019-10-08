@@ -1,0 +1,575 @@
+@import "./variables";
+@import "./spinners";
+body {
+  background-color: $primaryColor;
+}
+#btnIni {
+  color: white;
+  cursor: pointer;
+  margin-right: 1rem;
+  @media (max-width: 768px) {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+.jumbotron {
+  background-color: $primaryColor;
+  border-radius: 0px;
+}
+#contenedor_principal {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#anounce {
+  background-color: white;
+}
+.linVer {
+  height: 40px;
+  width: 3px;
+  background-color: $colorNav;
+}
+.flecha {
+  cursor: pointer;
+}
+.imgP {
+  height: 45px;
+  width: 45px;
+  background-size: cover;
+  border-radius: 50%;
+  border: 1px solid #dee2e6;
+  @media (max-width: 768px) {
+    background-image: none;
+    padding-top: 8px;
+    border-radius: 0px;
+    border: 0px;
+    ::before {
+      content: "Cuenta";
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+#dropBtn {
+  color: white;
+  cursor: pointer;
+  padding: 0px;
+}
+.text-lg {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+#Izq,
+#Der {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+.dropdown-menu {
+  @media (min-width: 768px) {
+    margin-right: 40px;
+  }
+}
+.card-body {
+  @media (min-width: 768px) {
+    display: none;
+    transition: all 1s ease-out;
+  }
+}
+.card {
+  &:hover {
+    .card-body {
+      display: block;
+    }
+  }
+}
+
+.titForm {
+  color: white;
+}
+/*Estilos formulario login*/
+.forms {
+  background-color: $colorPrueba;
+}
+.form {
+  width: 40%;
+  @media (max-width: 992px) {
+    width: 50%;
+  }
+  @media (max-width: 768px) {
+    width: 80%;
+  }
+  @media (max-width: 576px) {
+    width: 90%;
+  }
+  @media (max-width: 360px) {
+    width: 95%;
+  }
+  background-color: white;
+}
+.opcionLogin {
+  background-color: $colorPrueba3;
+  cursor: pointer;
+  &.activo {
+    background-color: white;
+  }
+
+  &.desactivo {
+    &:hover {
+      background-color: rgb(112, 12, 12);
+      color: white;
+    }
+  }
+}
+.form-control {
+  &.errIpt {
+    border: 1px solid $dangerColor;
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.432);
+    }
+  }
+}
+.errForm {
+  color: $dangerColor;
+}
+
+.imgSF {
+  width: 20px;
+  height: 20px;
+}
+.imgTF {
+  height: 80px;
+}
+
+.spacePreF {
+  width: 15px;
+}
+.bluec {
+  background-color: blue;
+}
+/*Fin*/
+.photoP {
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+}
+.linHor {
+  height: 1px;
+  width: 20px;
+  margin: 3px auto 3px auto;
+  padding: 1px;
+  background-color: white;
+  display: flex;
+}
+#btnD {
+  width: 35px;
+  height: 35px;
+}
+#login {
+  background-color: #002349;
+  margin: 15px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+nav {
+  z-index: 3;
+}
+.myNav {
+  background-color: $colorNav;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  margin-bottom: 2px;
+  padding-right: 5px;
+  a {
+    color: white;
+    &:hover {
+      color: black;
+    }
+    strong {
+      &:hover {
+        color: black;
+      }
+    }
+  }
+  z-index: 2;
+}
+.my-card {
+  cursor: pointer;
+}
+
+.navbar-toggler {
+  padding: 0px;
+}
+.MyBrand {
+  color: white;
+  font: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.linebar {
+  width: 5px;
+  height: 3px;
+  margin-bottom: 2px;
+  background-color: white;
+}
+.myLinks {
+  color: white;
+  font: bold;
+  cursor: pointer;
+  font: bold;
+  text-decoration: none;
+  list-style: none;
+  display: inline;
+}
+
+footer {
+  background-color: #042512;
+  color: white;
+  position: static;
+  display: block;
+}
+.link {
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    color: black;
+    font-weight: bold;
+  }
+}
+
+.btnToogle {
+  border: 0px;
+}
+.error {
+  color: $dangerColor;
+}
+#carMain {
+  margin: 60px 0px 0px 0px;
+  width: 100%;
+}
+.caroItem {
+  height: 260px;
+}
+.card {
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.mylist {
+  margin-left: 7px;
+  position: absolute;
+  @media (max-width: 768px) {
+    position: static;
+  }
+  list-style: none;
+  padding: 10px;
+  li {
+    padding: 3px 5px;
+    a {
+      color: black;
+      text-decoration: none;
+      &:hover {
+        color: rgb(35, 60, 114);
+      }
+    }
+  }
+}
+
+#carrito {
+  height: 80px;
+  width: 80px;
+  padding: 0px;
+  z-index: 4;
+  border-radius: 50%;
+  background-color: #00b93e;
+  margin-bottom: 10px;
+  position: fixed;
+  right: 25px;
+  bottom: 10px;
+  div {
+    .centro {
+      box-shadow: 0 7px 11px 0 rgba(0, 0, 0, 0.4),
+        0 7px 20px 0 rgba(0, 0, 0, 0.4);
+      &:active {
+        box-shadow: none;
+      }
+      height: 60px;
+      width: 60px;
+      margin: auto;
+      padding: 0px;
+      border-radius: 50%;
+      background-color: yellowgreen;
+      img {
+        height: 30px;
+        width: 30px;
+        margin: 15px;
+        margin-top: 0px;
+      }
+      .numart {
+        margin: 0px;
+        padding: 0px;
+        height: 20px;
+        width: 20px;
+        text-align: center;
+        border-radius: 50%;
+        color: white;
+        background-color: #002349;
+        z-index: 4;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+.base {
+  border-radius: 90%;
+  background-color: rgba(0, 0, 0, 0.356);
+  height: 5px;
+  width: 40px;
+  margin-bottom: 30px;
+  margin-left: 19px;
+  margin-top: 3px;
+}
+.migajas {
+  color: rgb(76, 76, 155);
+  font-size: 1.1rem;
+}
+.list-carro {
+  background-color: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  width: 240px;
+  height: 280px;
+  padding: 0px;
+  margin-right: 40px;
+  ul {
+    list-style: none;
+    padding: 10px;
+    height: 240px;
+    overflow: auto;
+    color: white;
+    li {
+      a {
+        color: red;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+.imgMini {
+  height: 75px;
+  width: 75px;
+}
+#prodContainer {
+  background-color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+.hold-det-prod {
+  @media (min-width: 768px) {
+    position: fixed;
+    top: 61.86px;
+    right: 2;
+  }
+}
+.textito {
+  text-align: justify;
+  word-break: break-all;
+}
+.romper-texto {
+  word-break: break-all;
+}
+.header-producto-carro {
+  font-size: 1.3rem;
+  margin: 7px 0px 7px 0px;
+}
+.dropm {
+  position: fixed;
+  top: auto;
+  right: 0px;
+  left: auto;
+  width: 200px;
+  a {
+    color: black;
+  }
+  @media (max-width: 768px) {
+    top: auto;
+    right: auto;
+    left: 15px;
+  }
+}
+.price {
+  font-weight: 300;
+  font-size: 37px;
+}
+#detallesProd {
+  border-left: 1px solid;
+  border-color: rgba(0, 0, 0, 0.075);
+  background-color: white;
+  z-index: 2;
+}
+
+.img-card-prod {
+  height: 130px;
+  width: 100%;
+}
+.pad15 {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+.imgPer {
+  height: 100px;
+}
+.card-user {
+  width: 250px;
+  height: 400px;
+  margin: 10px;
+  padding: 5px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+.img-log-plus {
+  height: 50px;
+}
+.shadow-box {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+.card-producto {
+  height: 375px;
+  width: 250px;
+  .img-producto {
+    height: 35%;
+  }
+  .body-producto {
+    p:nth-child(1) {
+      height: 10%;
+    }
+    p:nth-child(2) {
+      height: 20%;
+    }
+    p:nth-child(3) {
+      height: 10%;
+    }
+  }
+}
+.img-producto-det {
+  height: 170px;
+  width: 170px;
+  object-fit: contain;
+}
+.img-producto-mod {
+  height: 125px;
+  width: 125px;
+  object-fit: contain;
+}
+.botron {
+  padding: 0px;
+  height: 250px;
+  background-image: url("../media/img/la.jpg");
+  div {
+    background-color: rgba(0, 0, 0, 0.527);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      color: white;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+#Cprincipa {
+  display: block;
+}
+#NotFound {
+  height: 400px;
+}
+.img-carr-prod {
+  height: 120px;
+  width: 120px;
+}
+.option-account {
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.3rem;
+  font: bolder;
+  padding: 20px;
+  margin: 2px;
+  &.selected {
+    background: rgba(39, 212, 224, 0.247);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  }
+  &:hover {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  }
+}
+.options-account {
+  @media (min-width: 768px) {
+    border-right: 1px solid;
+    border-color: rgba(0, 0, 0, 0.171);
+  }
+  @media (max-width: 768px) {
+    border-bottom: 1px solid;
+    border-color: rgba(0, 0, 0, 0.171);
+  }
+}
+.container-dir {
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  }
+}
+.scroll-content {
+  overflow: auto;
+}
+.img-perfil-user {
+  height: 150px;
+  width: 150px;
+  padding: 0px;
+
+  object-fit: contain;
+}
+#btnAddDir {
+  position: absolute;
+  right: 40px;
+  top: 5px;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+}
+#btnChangeF {
+  cursor: pointer;
+  color: #002349;
+  &:active {
+    font-size: 0.9rem;
+  }
+}
+
+.toast {
+  width: 170px;
+  height: 70px;
+  position: absolute;
+  bottom: 0px;
+  right: auto;
+  left: auto;
+  margin: 15px;
+
+  &.error {
+    background-color: rgba(255, 9, 9, 0.589);
+  }
+  &.success {
+    background-color: rgba(12, 112, 79, 0.589);
+  }
+}
+.type-pointer {
+  cursor: pointer;
+}
+/*
+  .nav-material{
+    position: relative;
+  }*/
